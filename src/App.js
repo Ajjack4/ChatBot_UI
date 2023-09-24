@@ -1,8 +1,8 @@
 
 import './App.css';
 import Lottie from 'lottie-react';
-import animationData from './Assets/train.json'
-
+import animationData from './Assets/train.json';
+import sent from './Assets/transparent.png'
 
 function App() {
   return (
@@ -15,28 +15,36 @@ function App() {
         
       
      
-      
-      
-      <main>
-      <div class="container">
-      <Lottie animationData={animationData}/>
-      <div class="top-left">
-        
-      </div>
     
-      </div>
+    <main>
+    <div class="container">
+    
+    <Lottie animationData={animationData} className='svg' >
+    
+      
+    </Lottie>
+      
+      
+      
+        <div className='bubble right'>
+         Hi,how can i help you?
+        </div>
+      
+      
       <div>
       <form>
       <input type="text" />
       <button type="submit" >
-        <img className='hell' src='./transparent.png' alt="Snow"/>
+        <img className='hell' src={sent} alt="Snow"/>
       </button> 
       </form>
       
       </div>
+      </div>
+      
     </main>
    
-
+    
      
       
 
